@@ -31,9 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'common.apps.CommonConfig',
     'pybo.apps.PyboConfig',
     'django.contrib.admin',
-    'django.contrib.auth',
+    'django.contrib.auth',  # 로그인과 로그아웃을 도와주는 앱
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
