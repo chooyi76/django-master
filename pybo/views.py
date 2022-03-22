@@ -260,3 +260,4 @@ def comment_delete_answer(request, comment_id):
     else:
         comment.delete()
     return redirect('pybo:detail', question_id=comment.answer.question.id)
+
